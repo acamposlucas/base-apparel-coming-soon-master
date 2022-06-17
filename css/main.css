@@ -1,0 +1,122 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,
+textarea,
+input,
+button {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+body {
+  padding-bottom: 1rem;
+}
+
+.grid {
+  grid-template-areas:
+    header
+    background
+    hero;
+}
+
+.header {
+  grid-area: header;
+  padding-inline: 2rem;
+  padding-block: 2rem;
+}
+
+.header .logo {
+  height: 2rem;
+}
+
+.bg-hero {
+  grid-area: background;
+}
+
+.bg-hero img {
+  width: 100vw;
+}
+
+.hero {
+  grid-area: hero;
+}
+
+.hero-content {
+  margin-top: 4rem;
+  text-align: center;
+  padding-inline: 2rem;
+}
+
+.hero h1 {
+  color: hsl(0, 36%, 70%);
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  letter-spacing: 10px;
+  line-height: 1.1;
+}
+
+.hero h1 span {
+  color: hsl(0, 6%, 24%);
+  font-weight: bold;
+}
+
+.hero p {
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.3;
+  color: hsl(0, 36%, 70%);
+}
+
+form {
+  margin-top: 2.5rem;
+  padding-inline: 2rem;
+  position: relative;
+}
+
+.input-container {
+  min-width: 20rem;
+  border: 1px solid hsl(0, 36%, 70%);
+  border-radius: 32px;
+  padding-inline: 2rem;
+}
+
+.input-container input:placeholder {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+label {
+  border-radius: 24px;
+  width: 100%;
+  min-width: 20rem;
+}
+
+input {
+  overflow: hidden;
+  outline: none;
+  width: 100%;
+  border: 0;
+  padding-block: 1rem;
+}
+
+input::placeholder {
+  color: hsl(0, 36%, 70%);
+}
+
+form button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 32px;
+  position: absolute;
+  top: 0;
+  right: 1.4rem;
+  height: 100%;
+  width: 4rem;
+  border: 0;
+  background: linear-gradient(hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+}
