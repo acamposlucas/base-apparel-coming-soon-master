@@ -21,9 +21,7 @@
         <img src="./images/logo.svg" alt="Base Apparel" class="logo" />
       </header>
       <main>
-        <div class="bg-hero">
-          <img src="./images/hero-mobile.jpg" alt="" />
-        </div>
+        <div class="bg-hero"></div>
         <section class="hero">
           <h1>We're <span>coming soon</span></h1>
           <p>
@@ -31,23 +29,23 @@
             store. Add your email below to stay up-to-date with announcements
             and our launch deals
           </p>
+          <form>
+            <div class="input-container">
+              <label for="newsletter"> </label>
+              <input type="email" placeholder="Email Address" id="newsletter" />
+            </div>
+            <button type="submit" title="Sign up to newsletter">
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="20">
+                <path
+                  fill="none"
+                  stroke="#FFF"
+                  stroke-width="2"
+                  d="M1 1l8.836 8.836L1 18.671"
+                />
+              </svg>
+            </button>
+          </form>
         </section>
-        <form>
-          <div class="input-container">
-            <label for="newsletter"> </label>
-            <input type="email" placeholder="Email Address" id="newsletter" />
-          </div>
-          <button type="submit" title="Sign up to newsletter">
-            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="20">
-              <path
-                fill="none"
-                stroke="#FFF"
-                stroke-width="2"
-                d="M1 1l8.836 8.836L1 18.671"
-              />
-            </svg>
-          </button>
-        </form>
       </main>
     </div>
   </body>
