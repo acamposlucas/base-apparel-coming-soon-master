@@ -126,7 +126,13 @@ form button {
   height: 100%;
   width: 4rem;
   border: 0;
-  background: linear-gradient(hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  box-shadow: 0 0 20px rgba(245, 176, 176, 0.5);
+  transition: all 1s;
+}
+
+form button:hover {
+  transform: scale(1.1);
 }
 
 #message {
@@ -188,7 +194,6 @@ form button {
   }
 
   form button {
-    /* height: 50px; */
     right: 0;
     width: 5rem;
   }

@@ -12,6 +12,8 @@ form.addEventListener("submit", (e) => {
     span.textContent = `Please provide a valid email  `;
     span.style.visibility = "visible";
   } else {
+    input.setAttribute("aria-invalid", false);
+    inputContainer.classList.remove("input-container--error");
     span.textContent = `Thank you for signing up!`;
     span.style.visibility = "visible";
   }
