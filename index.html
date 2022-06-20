@@ -32,7 +32,13 @@
           <form>
             <div class="input-container">
               <label for="newsletter"> </label>
-              <input type="email" placeholder="Email Address" id="newsletter" />
+              <input
+                type="email"
+                placeholder="Email Address"
+                id="newsletter"
+                class="input-container__input"
+              />
+              <span id="error-message">Please provide a valid email</span>
             </div>
             <button type="submit" title="Sign up to newsletter">
               <svg xmlns="http://www.w3.org/2000/svg" width="12" height="20">
@@ -48,5 +54,6 @@
         </section>
       </main>
     </div>
+    <script src="./app.js"></script>
   </body>
 </html>
