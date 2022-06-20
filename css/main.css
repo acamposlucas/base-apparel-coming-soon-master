@@ -163,3 +163,23 @@ form button {
     width: 5rem;
   }
 }
+
+@media (min-width: 1440px) {
+  .header {
+    padding-inline: 14rem;
+  }
+
+  .hero {
+    padding-inline: 14rem;
+  }
+}
+
+@media (min-width: 1600px) {
+  .header {
+    padding-inline: 17rem;
+  }
+
+  .hero {
+    padding-inline: 17rem;
+  }
+}
